@@ -48,7 +48,7 @@
             this.btn0 = new System.Windows.Forms.Button();
             this.btn_hash = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.tb_enterText = new System.Windows.Forms.TextBox();
+            this.tb_wordBuilder = new System.Windows.Forms.TextBox();
             this.tb_modestatus = new System.Windows.Forms.TextBox();
             this.lb_btn7 = new System.Windows.Forms.ListBox();
             this.lb_btn8 = new System.Windows.Forms.ListBox();
@@ -136,6 +136,7 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -145,6 +146,7 @@
             this.btn7.TabIndex = 8;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn4
             // 
@@ -244,12 +246,13 @@
             this.button19.TabIndex = 19;
             this.button19.UseVisualStyleBackColor = true;
             // 
-            // tb_enterText
+            // tb_wordBuilder
             // 
-            this.tb_enterText.Location = new System.Drawing.Point(250, 162);
-            this.tb_enterText.Name = "tb_enterText";
-            this.tb_enterText.Size = new System.Drawing.Size(121, 20);
-            this.tb_enterText.TabIndex = 20;
+            this.tb_wordBuilder.Location = new System.Drawing.Point(250, 160);
+            this.tb_wordBuilder.Name = "tb_wordBuilder";
+            this.tb_wordBuilder.Size = new System.Drawing.Size(121, 20);
+            this.tb_wordBuilder.TabIndex = 20;
+            this.tb_wordBuilder.TextChanged += new System.EventHandler(this.tb_wordBuilder_TextChanged);
             // 
             // tb_modestatus
             // 
@@ -450,7 +453,7 @@
             this.Controls.Add(this.lb_btn8);
             this.Controls.Add(this.lb_btn7);
             this.Controls.Add(this.tb_modestatus);
-            this.Controls.Add(this.tb_enterText);
+            this.Controls.Add(this.tb_wordBuilder);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.btn_hash);
             this.Controls.Add(this.btn0);
@@ -500,7 +503,7 @@
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btn_hash;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox tb_enterText;
+        private System.Windows.Forms.TextBox tb_wordBuilder;
         private System.Windows.Forms.TextBox tb_modestatus;
         private System.Windows.Forms.ListBox lb_btn7;
         private System.Windows.Forms.ListBox lb_btn8;
