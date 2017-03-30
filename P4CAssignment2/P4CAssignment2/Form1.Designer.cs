@@ -82,6 +82,7 @@
             this.btn_mode.TabIndex = 1;
             this.btn_mode.Text = "Mode";
             this.btn_mode.UseVisualStyleBackColor = true;
+            this.btn_mode.Click += new System.EventHandler(this.btn_mode_Click);
             // 
             // btn_next
             // 

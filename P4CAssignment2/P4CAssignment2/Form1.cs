@@ -21,5 +21,16 @@ namespace P4CAssignment2
         {
 
         }
+
+        private void btn_mode_Click(object sender, EventArgs e)
+        {
+            if (tb_modestatus.Text == "Multi-Press")
+            {
+                tb_modestatus.Text ="Prediction";
+            }
+            else{
+                tb_modestatus.Text = "Multi-Press";
+            }
+        }
     }
 }

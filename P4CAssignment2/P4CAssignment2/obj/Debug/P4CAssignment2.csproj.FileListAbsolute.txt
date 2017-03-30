@@ -1,1 +1,9 @@
 c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\bin\Debug\P4CAssignment2.exe.config
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\bin\Debug\P4CAssignment2.exe
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\bin\Debug\P4CAssignment2.pdb
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.csprojResolveAssemblyReference.cache
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.Form1.resources
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.Properties.Resources.resources
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.csproj.GenerateResource.Cache
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.exe
+c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.pdb
