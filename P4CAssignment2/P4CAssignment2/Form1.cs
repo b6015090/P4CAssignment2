@@ -18,6 +18,9 @@ namespace P4CAssignment2
         bool[] boolsButtonPressed = new bool[19];
         int intWhichButton = 0; 
 
+        //Timer
+        Timer myTimer = new Timer();
+
         public Form1()
         {
             InitializeComponent();
@@ -44,8 +47,13 @@ namespace P4CAssignment2
             for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
                 boolsButtonPressed[intWhichButton] = false;
         }
-       
-            
+
+        private void timer()
+        {
+            Timer letterTimer = new Timer();
+            myTimer.Interval = 2000;
+            letterTimer.Start();
+        }
         
         
 
@@ -58,7 +66,7 @@ namespace P4CAssignment2
         {
             LetterIndex++;
             tb_wordBuilder.Text = lb_btn7.Items[LetterIndex].ToString();
-            
+            timer();
 
         }
 
