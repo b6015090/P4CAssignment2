@@ -12,11 +12,15 @@ namespace P4CAssignment2
 {
     public partial class Form1 : Form
     {
+
+
+        bool firstvisit = true;
+
+        
+
         int LetterIndex = -1;
 
-        //Buttons. Identifies which button is being selected by the user
-        bool[] boolsButtonPressed = new bool[19];
-        int intWhichButton = 0; 
+         
 
         //Timer
         Timer myTimer = new Timer();
@@ -28,7 +32,7 @@ namespace P4CAssignment2
 
         private void lb_btn7_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_mode_Click(object sender, EventArgs e)
@@ -44,16 +48,15 @@ namespace P4CAssignment2
 
         private void Frm_MainWindow_Load(object sender, EventArgs e)
         {
-            for (int intWhichButton = 0; intWhichButton <= 18; intWhichButton++)
-                boolsButtonPressed[intWhichButton] = false;
+            
         }
 
-        private void timer()
-        {
-            Timer letterTimer = new Timer();
-            myTimer.Interval = 2000;
-            letterTimer.Start();
-        }
+       //// private void timer()
+       // {
+       //     Timer letterTimer = new Timer();
+       //     myTimer.Interval = 500;
+       //     letterTimer.Start();
+       // }
         
         
 
@@ -64,70 +67,193 @@ namespace P4CAssignment2
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            LetterIndex++;
-            tb_wordBuilder.Text = lb_btn7.Items[LetterIndex].ToString();
-            timer();
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
 
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn7.Items);
+            }
+
+            letterBuilder.Enabled = false;
+            LetterIndex++;
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn8.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn8.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
+           
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+                //copy the right list box = global list box
+
+
+                lb_Global.Items.AddRange(lb_btn9.Items);
+
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn9.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn4.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn4.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn5.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn5.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn6.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn6.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn1.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn1.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn2.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn2.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btn3.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btn3.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void btn_star_Click(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btnstar.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btnstar.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
         }
 
         private void lb_btnhash_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btnhash.Items);
+            }
+
+            letterBuilder.Enabled = false;
             LetterIndex++;
-            tb_wordBuilder.Text = lb_btnhash.Items[LetterIndex].ToString();
+
+            letterBuilder.Enabled = true;
+        }
+
+        private void letterBuilder_Tick(object sender, EventArgs e)
+        {
+            //turning timer off
+            letterBuilder.Enabled = false;
+
+            //appends individual letter from the list of letters
+            tb_wordBuilder.AppendText( lb_Global.Items[LetterIndex].ToString());
+            LetterIndex = -1;
+
+            firstvisit = true;
         }
     }
 }

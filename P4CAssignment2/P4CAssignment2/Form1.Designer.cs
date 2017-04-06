@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_mode = new System.Windows.Forms.Button();
             this.btn_next = new System.Windows.Forms.Button();
@@ -61,6 +62,8 @@
             this.lb_btn3 = new System.Windows.Forms.ListBox();
             this.lb_btnstar = new System.Windows.Forms.ListBox();
             this.lb_btnhash = new System.Windows.Forms.ListBox();
+            this.letterBuilder = new System.Windows.Forms.Timer(this.components);
+            this.lb_Global = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -256,6 +259,7 @@
             // 
             // tb_wordBuilder
             // 
+            this.tb_wordBuilder.Enabled = false;
             this.tb_wordBuilder.Location = new System.Drawing.Point(250, 160);
             this.tb_wordBuilder.Name = "tb_wordBuilder";
             this.tb_wordBuilder.Size = new System.Drawing.Size(121, 20);
@@ -445,11 +449,25 @@
             this.lb_btnhash.TabIndex = 32;
             this.lb_btnhash.SelectedIndexChanged += new System.EventHandler(this.lb_btnhash_SelectedIndexChanged);
             // 
+            // letterBuilder
+            // 
+            this.letterBuilder.Interval = 500;
+            this.letterBuilder.Tick += new System.EventHandler(this.letterBuilder_Tick);
+            // 
+            // lb_Global
+            // 
+            this.lb_Global.FormattingEnabled = true;
+            this.lb_Global.Location = new System.Drawing.Point(648, 239);
+            this.lb_Global.Name = "lb_Global";
+            this.lb_Global.Size = new System.Drawing.Size(105, 95);
+            this.lb_Global.TabIndex = 33;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 413);
+            this.Controls.Add(this.lb_Global);
             this.Controls.Add(this.lb_btnhash);
             this.Controls.Add(this.lb_btnstar);
             this.Controls.Add(this.lb_btn3);
@@ -525,6 +543,8 @@
         private System.Windows.Forms.ListBox lb_btn3;
         private System.Windows.Forms.ListBox lb_btnstar;
         private System.Windows.Forms.ListBox lb_btnhash;
+        private System.Windows.Forms.Timer letterBuilder;
+        private System.Windows.Forms.ListBox lb_Global;
     }
 }
 
