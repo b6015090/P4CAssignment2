@@ -16,11 +16,11 @@ namespace P4CAssignment2
 
         bool firstvisit = true;
 
-        
+
 
         int LetterIndex = -1;
 
-         
+
 
         //Timer
         Timer myTimer = new Timer();
@@ -32,37 +32,38 @@ namespace P4CAssignment2
 
         private void lb_btn7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_mode_Click(object sender, EventArgs e)
         {
             if (tb_modestatus.Text == "Multi-Press")
             {
-                tb_modestatus.Text ="Prediction";
+                tb_modestatus.Text = "Prediction";
             }
-            else{
+            else
+            {
                 tb_modestatus.Text = "Multi-Press";
             }
         }
 
         private void Frm_MainWindow_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-       //// private void timer()
-       // {
-       //     Timer letterTimer = new Timer();
-       //     myTimer.Interval = 500;
-       //     letterTimer.Start();
-       // }
-        
-        
+        //// private void timer()
+        // {
+        //     Timer letterTimer = new Timer();
+        //     myTimer.Interval = 500;
+        //     letterTimer.Start();
+        // }
+
+
 
         private void tb_wordBuilder_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -95,7 +96,7 @@ namespace P4CAssignment2
             LetterIndex++;
 
             letterBuilder.Enabled = true;
-           
+
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -230,13 +231,8 @@ namespace P4CAssignment2
 
         private void lb_btnhash_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (firstvisit == true)
-            {
-                lb_Global.Items.Clear();
 
-                //copy the right list box = global list box
-                lb_Global.Items.AddRange(lb_btnhash.Items);
-            }
+
 
             letterBuilder.Enabled = false;
             LetterIndex++;
@@ -250,10 +246,21 @@ namespace P4CAssignment2
             letterBuilder.Enabled = false;
 
             //appends individual letter from the list of letters
-            tb_wordBuilder.AppendText( lb_Global.Items[LetterIndex].ToString());
+            tb_wordBuilder.AppendText(lb_Global.Items[LetterIndex].ToString());
             LetterIndex = -1;
 
             firstvisit = true;
+        }
+
+        private void btn_hash_Click(object sender, EventArgs e)
+        {
+            if (firstvisit == true)
+            {
+                lb_Global.Items.Clear();
+
+                //copy the right list box = global list box
+                lb_Global.Items.AddRange(lb_btnhash.Items);
+            }
         }
     }
 }

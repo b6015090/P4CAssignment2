@@ -248,6 +248,7 @@
             this.btn_hash.TabIndex = 18;
             this.btn_hash.Text = "#";
             this.btn_hash.UseVisualStyleBackColor = true;
+            this.btn_hash.Click += new System.EventHandler(this.btn_hash_Click);
             // 
             // button19
             // 
@@ -259,7 +260,6 @@
             // 
             // tb_wordBuilder
             // 
-            this.tb_wordBuilder.Enabled = false;
             this.tb_wordBuilder.Location = new System.Drawing.Point(250, 160);
             this.tb_wordBuilder.Name = "tb_wordBuilder";
             this.tb_wordBuilder.Size = new System.Drawing.Size(121, 20);
