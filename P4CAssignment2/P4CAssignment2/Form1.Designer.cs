@@ -536,7 +536,10 @@
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_mode);
             this.Controls.Add(this.tb_notepad);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
