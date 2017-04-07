@@ -79,184 +79,203 @@
             // 
             // btn_mode
             // 
+            this.btn_mode.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mode.Location = new System.Drawing.Point(250, 186);
             this.btn_mode.Name = "btn_mode";
             this.btn_mode.Size = new System.Drawing.Size(43, 37);
             this.btn_mode.TabIndex = 1;
             this.btn_mode.Text = "Mode";
-            this.btn_mode.UseVisualStyleBackColor = true;
+            this.btn_mode.UseVisualStyleBackColor = false;
             this.btn_mode.Click += new System.EventHandler(this.btn_mode_Click);
             // 
             // btn_next
             // 
+            this.btn_next.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_next.Location = new System.Drawing.Point(299, 186);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(43, 37);
             this.btn_next.TabIndex = 2;
             this.btn_next.Text = "Next";
-            this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.UseVisualStyleBackColor = false;
             // 
             // btn_previous
             // 
+            this.btn_previous.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_previous.Location = new System.Drawing.Point(348, 186);
             this.btn_previous.Name = "btn_previous";
             this.btn_previous.Size = new System.Drawing.Size(43, 37);
             this.btn_previous.TabIndex = 3;
             this.btn_previous.Text = "Previous";
-            this.btn_previous.UseVisualStyleBackColor = true;
+            this.btn_previous.UseVisualStyleBackColor = false;
             // 
             // btn_sendPredictive
             // 
+            this.btn_sendPredictive.BackColor = System.Drawing.Color.PeachPuff;
             this.btn_sendPredictive.Location = new System.Drawing.Point(397, 186);
             this.btn_sendPredictive.Name = "btn_sendPredictive";
             this.btn_sendPredictive.Size = new System.Drawing.Size(43, 37);
             this.btn_sendPredictive.TabIndex = 4;
             this.btn_sendPredictive.Text = "Send Predictive";
-            this.btn_sendPredictive.UseVisualStyleBackColor = true;
+            this.btn_sendPredictive.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.PeachPuff;
             this.button5.Location = new System.Drawing.Point(397, 229);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(43, 37);
             this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // btn9
             // 
+            this.btn9.BackColor = System.Drawing.Color.LightCoral;
             this.btn9.Location = new System.Drawing.Point(348, 229);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(43, 37);
             this.btn9.TabIndex = 6;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Text = "  9   def";
+            this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn8
             // 
+            this.btn8.BackColor = System.Drawing.Color.LightCoral;
             this.btn8.Location = new System.Drawing.Point(299, 229);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(43, 37);
             this.btn8.TabIndex = 7;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Text = "   8     abc";
+            this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
+            this.btn7.BackColor = System.Drawing.Color.LightCoral;
             this.btn7.Location = new System.Drawing.Point(250, 229);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(43, 37);
             this.btn7.TabIndex = 8;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Text = "   7    .,\"";
+            this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn4
             // 
+            this.btn4.BackColor = System.Drawing.Color.LightCoral;
             this.btn4.Location = new System.Drawing.Point(250, 272);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(43, 37);
             this.btn4.TabIndex = 9;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Text = "  4    ghi";
+            this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
+            this.btn5.BackColor = System.Drawing.Color.LightCoral;
             this.btn5.Location = new System.Drawing.Point(299, 272);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(43, 37);
             this.btn5.TabIndex = 10;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Text = " 5    jkl";
+            this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
+            this.btn6.BackColor = System.Drawing.Color.LightCoral;
             this.btn6.Location = new System.Drawing.Point(348, 272);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(43, 37);
             this.btn6.TabIndex = 11;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Text = " 6   mno";
+            this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn_enter
             // 
+            this.btn_enter.BackColor = System.Drawing.Color.PeachPuff;
             this.btn_enter.Location = new System.Drawing.Point(397, 315);
             this.btn_enter.Name = "btn_enter";
             this.btn_enter.Size = new System.Drawing.Size(43, 80);
             this.btn_enter.TabIndex = 12;
             this.btn_enter.Text = "Enter";
-            this.btn_enter.UseVisualStyleBackColor = true;
+            this.btn_enter.UseVisualStyleBackColor = false;
             // 
             // btn3
             // 
+            this.btn3.BackColor = System.Drawing.Color.LightCoral;
             this.btn3.Location = new System.Drawing.Point(348, 315);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(43, 37);
             this.btn3.TabIndex = 13;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Text = "  3   wxyz";
+            this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
+            this.btn2.BackColor = System.Drawing.Color.LightCoral;
             this.btn2.Location = new System.Drawing.Point(299, 315);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(43, 37);
             this.btn2.TabIndex = 14;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Text = "  2    tuv";
+            this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
+            this.btn1.BackColor = System.Drawing.Color.LightCoral;
             this.btn1.Location = new System.Drawing.Point(250, 315);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(43, 37);
             this.btn1.TabIndex = 15;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Text = "   1    pqrs";
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn_star
             // 
+            this.btn_star.BackColor = System.Drawing.Color.LightCoral;
             this.btn_star.Location = new System.Drawing.Point(250, 358);
             this.btn_star.Name = "btn_star";
             this.btn_star.Size = new System.Drawing.Size(43, 37);
             this.btn_star.TabIndex = 16;
             this.btn_star.Text = "*";
-            this.btn_star.UseVisualStyleBackColor = true;
+            this.btn_star.UseVisualStyleBackColor = false;
             this.btn_star.Click += new System.EventHandler(this.btn_star_Click);
             // 
             // btn0
             // 
+            this.btn0.BackColor = System.Drawing.Color.LightGreen;
             this.btn0.Location = new System.Drawing.Point(299, 358);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(43, 37);
             this.btn0.TabIndex = 17;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Text = " 000   [ _ ]";
+            this.btn0.UseVisualStyleBackColor = false;
             // 
             // btn_hash
             // 
+            this.btn_hash.BackColor = System.Drawing.Color.LightCoral;
             this.btn_hash.Location = new System.Drawing.Point(348, 358);
             this.btn_hash.Name = "btn_hash";
             this.btn_hash.Size = new System.Drawing.Size(43, 37);
             this.btn_hash.TabIndex = 18;
             this.btn_hash.Text = "#";
-            this.btn_hash.UseVisualStyleBackColor = true;
+            this.btn_hash.UseVisualStyleBackColor = false;
             this.btn_hash.Click += new System.EventHandler(this.btn_hash_Click);
             // 
             // button19
             // 
+            this.button19.BackColor = System.Drawing.Color.PeachPuff;
             this.button19.Location = new System.Drawing.Point(397, 272);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(43, 37);
             this.button19.TabIndex = 19;
-            this.button19.UseVisualStyleBackColor = true;
+            this.button19.UseVisualStyleBackColor = false;
             // 
             // tb_wordBuilder
             // 
@@ -274,6 +293,8 @@
             this.tb_modestatus.Size = new System.Drawing.Size(62, 20);
             this.tb_modestatus.TabIndex = 21;
             this.tb_modestatus.Text = "Multi-Press";
+            this.tb_modestatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_modestatus.TextChanged += new System.EventHandler(this.tb_modestatus_TextChanged);
             // 
             // lb_btn7
             // 

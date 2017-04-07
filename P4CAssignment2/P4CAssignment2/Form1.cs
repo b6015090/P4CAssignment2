@@ -262,5 +262,10 @@ namespace P4CAssignment2
                 lb_Global.Items.AddRange(lb_btnhash.Items);
             }
         }
+
+        private void tb_modestatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
