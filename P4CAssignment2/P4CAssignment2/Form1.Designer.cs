@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_notepad = new System.Windows.Forms.TextBox();
             this.btn_mode = new System.Windows.Forms.Button();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
@@ -64,18 +64,20 @@
             this.lb_btnhash = new System.Windows.Forms.ListBox();
             this.letterBuilder = new System.Windows.Forms.Timer(this.components);
             this.lb_Global = new System.Windows.Forms.ListBox();
+            this.lb_textpad = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tb_notepad
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.Location = new System.Drawing.Point(11, 10);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(754, 138);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_notepad.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tb_notepad.Location = new System.Drawing.Point(11, 10);
+            this.tb_notepad.Multiline = true;
+            this.tb_notepad.Name = "tb_notepad";
+            this.tb_notepad.ReadOnly = true;
+            this.tb_notepad.Size = new System.Drawing.Size(754, 138);
+            this.tb_notepad.TabIndex = 0;
+            this.tb_notepad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_notepad.TextChanged += new System.EventHandler(this.tb_notepad_TextChanged);
             // 
             // btn_mode
             // 
@@ -256,6 +258,7 @@
             this.btn0.TabIndex = 17;
             this.btn0.Text = " 000   [ _ ]";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btn_hash
             // 
@@ -478,16 +481,26 @@
             // lb_Global
             // 
             this.lb_Global.FormattingEnabled = true;
-            this.lb_Global.Location = new System.Drawing.Point(648, 239);
+            this.lb_Global.Location = new System.Drawing.Point(645, 229);
             this.lb_Global.Name = "lb_Global";
-            this.lb_Global.Size = new System.Drawing.Size(105, 95);
+            this.lb_Global.Size = new System.Drawing.Size(105, 69);
             this.lb_Global.TabIndex = 33;
+            this.lb_Global.SelectedIndexChanged += new System.EventHandler(this.lb_Global_SelectedIndexChanged);
+            // 
+            // lb_textpad
+            // 
+            this.lb_textpad.FormattingEnabled = true;
+            this.lb_textpad.Location = new System.Drawing.Point(645, 306);
+            this.lb_textpad.Name = "lb_textpad";
+            this.lb_textpad.Size = new System.Drawing.Size(105, 69);
+            this.lb_textpad.TabIndex = 34;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 413);
+            this.Controls.Add(this.lb_textpad);
             this.Controls.Add(this.lb_Global);
             this.Controls.Add(this.lb_btnhash);
             this.Controls.Add(this.lb_btnstar);
@@ -521,7 +534,7 @@
             this.Controls.Add(this.btn_previous);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_mode);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_notepad);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -531,7 +544,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_notepad;
         private System.Windows.Forms.Button btn_mode;
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_previous;
@@ -566,6 +579,7 @@
         private System.Windows.Forms.ListBox lb_btnhash;
         private System.Windows.Forms.Timer letterBuilder;
         private System.Windows.Forms.ListBox lb_Global;
+        private System.Windows.Forms.ListBox lb_textpad;
     }
 }
 

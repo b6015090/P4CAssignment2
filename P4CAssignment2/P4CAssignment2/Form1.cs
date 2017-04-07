@@ -16,12 +16,10 @@ namespace P4CAssignment2
 
 
         bool firstvisit = true;
-
-
-
         int LetterIndex = -1;
 
-
+        bool wordAdded = false;
+        //int WordIndex = -1;
 
         //Timer
         Timer myTimer = new Timer();
@@ -53,12 +51,7 @@ namespace P4CAssignment2
 
         }
 
-        //// private void timer()
-        // {
-        //     Timer letterTimer = new Timer();
-        //     myTimer.Interval = 500;
-        //     letterTimer.Start();
-        // }
+       
 
 
 
@@ -233,12 +226,6 @@ namespace P4CAssignment2
         private void lb_btnhash_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-
-
-            letterBuilder.Enabled = false;
-            LetterIndex++;
-
-            letterBuilder.Enabled = true;
         }
 
         private void letterBuilder_Tick(object sender, EventArgs e)
@@ -265,6 +252,31 @@ namespace P4CAssignment2
         }
 
         private void tb_modestatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_notepad_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            wordAdded = true;
+
+            if (wordAdded == true)
+            {
+                tb_notepad.AppendText(" " + tb_wordBuilder.Text);
+                //Clears the textbox
+                tb_wordBuilder.Clear();
+
+            }
+            
+
+        }
+
+        private void lb_Global_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
