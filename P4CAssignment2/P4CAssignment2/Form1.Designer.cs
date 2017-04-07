@@ -204,6 +204,7 @@
             this.btn_enter.TabIndex = 12;
             this.btn_enter.Text = "Enter";
             this.btn_enter.UseVisualStyleBackColor = false;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
             // 
             // btn3
             // 

@@ -280,5 +280,11 @@ namespace P4CAssignment2
         {
 
         }
+
+        private void btn_enter_Click(object sender, EventArgs e)
+        {
+            tb_notepad.AppendText(Environment.NewLine);
+
+        }
     }
 }
