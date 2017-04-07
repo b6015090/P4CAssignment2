@@ -64,7 +64,6 @@
             this.lb_btnhash = new System.Windows.Forms.ListBox();
             this.letterBuilder = new System.Windows.Forms.Timer(this.components);
             this.lb_Global = new System.Windows.Forms.ListBox();
-            this.lb_textpad = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // tb_notepad
@@ -315,6 +314,7 @@
             this.lb_btn7.Name = "lb_btn7";
             this.lb_btn7.Size = new System.Drawing.Size(46, 30);
             this.lb_btn7.TabIndex = 22;
+            this.lb_btn7.Visible = false;
             this.lb_btn7.SelectedIndexChanged += new System.EventHandler(this.lb_btn7_SelectedIndexChanged);
             // 
             // lb_btn8
@@ -332,6 +332,7 @@
             this.lb_btn8.Name = "lb_btn8";
             this.lb_btn8.Size = new System.Drawing.Size(44, 30);
             this.lb_btn8.TabIndex = 23;
+            this.lb_btn8.Visible = false;
             // 
             // lb_btn9
             // 
@@ -348,6 +349,7 @@
             this.lb_btn9.Name = "lb_btn9";
             this.lb_btn9.Size = new System.Drawing.Size(44, 30);
             this.lb_btn9.TabIndex = 24;
+            this.lb_btn9.Visible = false;
             // 
             // lb_btn4
             // 
@@ -364,6 +366,7 @@
             this.lb_btn4.Name = "lb_btn4";
             this.lb_btn4.Size = new System.Drawing.Size(46, 30);
             this.lb_btn4.TabIndex = 25;
+            this.lb_btn4.Visible = false;
             // 
             // lb_btn5
             // 
@@ -380,6 +383,7 @@
             this.lb_btn5.Name = "lb_btn5";
             this.lb_btn5.Size = new System.Drawing.Size(44, 30);
             this.lb_btn5.TabIndex = 26;
+            this.lb_btn5.Visible = false;
             // 
             // lb_btn6
             // 
@@ -396,6 +400,7 @@
             this.lb_btn6.Name = "lb_btn6";
             this.lb_btn6.Size = new System.Drawing.Size(44, 30);
             this.lb_btn6.TabIndex = 27;
+            this.lb_btn6.Visible = false;
             // 
             // lb_btn1
             // 
@@ -414,6 +419,7 @@
             this.lb_btn1.Name = "lb_btn1";
             this.lb_btn1.Size = new System.Drawing.Size(46, 30);
             this.lb_btn1.TabIndex = 28;
+            this.lb_btn1.Visible = false;
             // 
             // lb_btn2
             // 
@@ -430,6 +436,7 @@
             this.lb_btn2.Name = "lb_btn2";
             this.lb_btn2.Size = new System.Drawing.Size(42, 30);
             this.lb_btn2.TabIndex = 29;
+            this.lb_btn2.Visible = false;
             // 
             // lb_btn3
             // 
@@ -448,6 +455,7 @@
             this.lb_btn3.Name = "lb_btn3";
             this.lb_btn3.Size = new System.Drawing.Size(44, 30);
             this.lb_btn3.TabIndex = 30;
+            this.lb_btn3.Visible = false;
             // 
             // lb_btnstar
             // 
@@ -460,6 +468,7 @@
             this.lb_btnstar.Name = "lb_btnstar";
             this.lb_btnstar.Size = new System.Drawing.Size(46, 30);
             this.lb_btnstar.TabIndex = 31;
+            this.lb_btnstar.Visible = false;
             // 
             // lb_btnhash
             // 
@@ -472,6 +481,7 @@
             this.lb_btnhash.Name = "lb_btnhash";
             this.lb_btnhash.Size = new System.Drawing.Size(44, 30);
             this.lb_btnhash.TabIndex = 32;
+            this.lb_btnhash.Visible = false;
             this.lb_btnhash.SelectedIndexChanged += new System.EventHandler(this.lb_btnhash_SelectedIndexChanged);
             // 
             // letterBuilder
@@ -486,22 +496,14 @@
             this.lb_Global.Name = "lb_Global";
             this.lb_Global.Size = new System.Drawing.Size(105, 69);
             this.lb_Global.TabIndex = 33;
+            this.lb_Global.Visible = false;
             this.lb_Global.SelectedIndexChanged += new System.EventHandler(this.lb_Global_SelectedIndexChanged);
-            // 
-            // lb_textpad
-            // 
-            this.lb_textpad.FormattingEnabled = true;
-            this.lb_textpad.Location = new System.Drawing.Point(645, 306);
-            this.lb_textpad.Name = "lb_textpad";
-            this.lb_textpad.Size = new System.Drawing.Size(105, 69);
-            this.lb_textpad.TabIndex = 34;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 413);
-            this.Controls.Add(this.lb_textpad);
             this.Controls.Add(this.lb_Global);
             this.Controls.Add(this.lb_btnhash);
             this.Controls.Add(this.lb_btnstar);
@@ -583,7 +585,6 @@
         private System.Windows.Forms.ListBox lb_btnhash;
         private System.Windows.Forms.Timer letterBuilder;
         private System.Windows.Forms.ListBox lb_Global;
-        private System.Windows.Forms.ListBox lb_textpad;
     }
 }
 
