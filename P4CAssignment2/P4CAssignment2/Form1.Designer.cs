@@ -64,16 +64,17 @@
             this.lb_btnhash = new System.Windows.Forms.ListBox();
             this.letterBuilder = new System.Windows.Forms.Timer(this.components);
             this.lb_Global = new System.Windows.Forms.ListBox();
+            this.btn_configure = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_notepad
             // 
             this.tb_notepad.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tb_notepad.Location = new System.Drawing.Point(11, 10);
+            this.tb_notepad.Location = new System.Drawing.Point(13, 32);
             this.tb_notepad.Multiline = true;
             this.tb_notepad.Name = "tb_notepad";
             this.tb_notepad.ReadOnly = true;
-            this.tb_notepad.Size = new System.Drawing.Size(754, 138);
+            this.tb_notepad.Size = new System.Drawing.Size(754, 187);
             this.tb_notepad.TabIndex = 0;
             this.tb_notepad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tb_notepad.TextChanged += new System.EventHandler(this.tb_notepad_TextChanged);
@@ -81,7 +82,7 @@
             // btn_mode
             // 
             this.btn_mode.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_mode.Location = new System.Drawing.Point(250, 186);
+            this.btn_mode.Location = new System.Drawing.Point(260, 251);
             this.btn_mode.Name = "btn_mode";
             this.btn_mode.Size = new System.Drawing.Size(43, 37);
             this.btn_mode.TabIndex = 1;
@@ -92,7 +93,7 @@
             // btn_next
             // 
             this.btn_next.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_next.Location = new System.Drawing.Point(299, 186);
+            this.btn_next.Location = new System.Drawing.Point(309, 251);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(43, 37);
             this.btn_next.TabIndex = 2;
@@ -102,7 +103,7 @@
             // btn_previous
             // 
             this.btn_previous.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_previous.Location = new System.Drawing.Point(348, 186);
+            this.btn_previous.Location = new System.Drawing.Point(358, 251);
             this.btn_previous.Name = "btn_previous";
             this.btn_previous.Size = new System.Drawing.Size(43, 37);
             this.btn_previous.TabIndex = 3;
@@ -112,7 +113,7 @@
             // btn_sendPredictive
             // 
             this.btn_sendPredictive.BackColor = System.Drawing.Color.PeachPuff;
-            this.btn_sendPredictive.Location = new System.Drawing.Point(397, 186);
+            this.btn_sendPredictive.Location = new System.Drawing.Point(407, 251);
             this.btn_sendPredictive.Name = "btn_sendPredictive";
             this.btn_sendPredictive.Size = new System.Drawing.Size(43, 37);
             this.btn_sendPredictive.TabIndex = 4;
@@ -122,7 +123,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.PeachPuff;
-            this.button5.Location = new System.Drawing.Point(397, 229);
+            this.button5.Location = new System.Drawing.Point(407, 294);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(43, 37);
             this.button5.TabIndex = 5;
@@ -131,7 +132,7 @@
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.LightCoral;
-            this.btn9.Location = new System.Drawing.Point(348, 229);
+            this.btn9.Location = new System.Drawing.Point(358, 294);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(43, 37);
             this.btn9.TabIndex = 6;
@@ -142,7 +143,7 @@
             // btn8
             // 
             this.btn8.BackColor = System.Drawing.Color.LightCoral;
-            this.btn8.Location = new System.Drawing.Point(299, 229);
+            this.btn8.Location = new System.Drawing.Point(309, 294);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(43, 37);
             this.btn8.TabIndex = 7;
@@ -153,7 +154,7 @@
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.Color.LightCoral;
-            this.btn7.Location = new System.Drawing.Point(250, 229);
+            this.btn7.Location = new System.Drawing.Point(260, 294);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(43, 37);
             this.btn7.TabIndex = 8;
@@ -164,7 +165,7 @@
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.Color.LightCoral;
-            this.btn4.Location = new System.Drawing.Point(250, 272);
+            this.btn4.Location = new System.Drawing.Point(260, 337);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(43, 37);
             this.btn4.TabIndex = 9;
@@ -175,7 +176,7 @@
             // btn5
             // 
             this.btn5.BackColor = System.Drawing.Color.LightCoral;
-            this.btn5.Location = new System.Drawing.Point(299, 272);
+            this.btn5.Location = new System.Drawing.Point(309, 337);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(43, 37);
             this.btn5.TabIndex = 10;
@@ -186,7 +187,7 @@
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.Color.LightCoral;
-            this.btn6.Location = new System.Drawing.Point(348, 272);
+            this.btn6.Location = new System.Drawing.Point(358, 337);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(43, 37);
             this.btn6.TabIndex = 11;
@@ -197,7 +198,7 @@
             // btn_enter
             // 
             this.btn_enter.BackColor = System.Drawing.Color.PeachPuff;
-            this.btn_enter.Location = new System.Drawing.Point(397, 315);
+            this.btn_enter.Location = new System.Drawing.Point(407, 380);
             this.btn_enter.Name = "btn_enter";
             this.btn_enter.Size = new System.Drawing.Size(43, 80);
             this.btn_enter.TabIndex = 12;
@@ -208,7 +209,7 @@
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.LightCoral;
-            this.btn3.Location = new System.Drawing.Point(348, 315);
+            this.btn3.Location = new System.Drawing.Point(358, 380);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(43, 37);
             this.btn3.TabIndex = 13;
@@ -219,7 +220,7 @@
             // btn2
             // 
             this.btn2.BackColor = System.Drawing.Color.LightCoral;
-            this.btn2.Location = new System.Drawing.Point(299, 315);
+            this.btn2.Location = new System.Drawing.Point(309, 380);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(43, 37);
             this.btn2.TabIndex = 14;
@@ -230,7 +231,7 @@
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.LightCoral;
-            this.btn1.Location = new System.Drawing.Point(250, 315);
+            this.btn1.Location = new System.Drawing.Point(260, 380);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(43, 37);
             this.btn1.TabIndex = 15;
@@ -241,7 +242,7 @@
             // btn_star
             // 
             this.btn_star.BackColor = System.Drawing.Color.LightCoral;
-            this.btn_star.Location = new System.Drawing.Point(250, 358);
+            this.btn_star.Location = new System.Drawing.Point(260, 423);
             this.btn_star.Name = "btn_star";
             this.btn_star.Size = new System.Drawing.Size(43, 37);
             this.btn_star.TabIndex = 16;
@@ -252,7 +253,7 @@
             // btn0
             // 
             this.btn0.BackColor = System.Drawing.Color.LightGreen;
-            this.btn0.Location = new System.Drawing.Point(299, 358);
+            this.btn0.Location = new System.Drawing.Point(309, 423);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(43, 37);
             this.btn0.TabIndex = 17;
@@ -263,7 +264,7 @@
             // btn_hash
             // 
             this.btn_hash.BackColor = System.Drawing.Color.LightCoral;
-            this.btn_hash.Location = new System.Drawing.Point(348, 358);
+            this.btn_hash.Location = new System.Drawing.Point(358, 423);
             this.btn_hash.Name = "btn_hash";
             this.btn_hash.Size = new System.Drawing.Size(43, 37);
             this.btn_hash.TabIndex = 18;
@@ -274,7 +275,7 @@
             // button19
             // 
             this.button19.BackColor = System.Drawing.Color.PeachPuff;
-            this.button19.Location = new System.Drawing.Point(397, 272);
+            this.button19.Location = new System.Drawing.Point(407, 337);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(43, 37);
             this.button19.TabIndex = 19;
@@ -282,7 +283,7 @@
             // 
             // tb_wordBuilder
             // 
-            this.tb_wordBuilder.Location = new System.Drawing.Point(250, 160);
+            this.tb_wordBuilder.Location = new System.Drawing.Point(260, 225);
             this.tb_wordBuilder.Name = "tb_wordBuilder";
             this.tb_wordBuilder.Size = new System.Drawing.Size(121, 20);
             this.tb_wordBuilder.TabIndex = 20;
@@ -290,7 +291,7 @@
             // 
             // tb_modestatus
             // 
-            this.tb_modestatus.Location = new System.Drawing.Point(377, 160);
+            this.tb_modestatus.Location = new System.Drawing.Point(387, 225);
             this.tb_modestatus.Name = "tb_modestatus";
             this.tb_modestatus.ReadOnly = true;
             this.tb_modestatus.Size = new System.Drawing.Size(62, 20);
@@ -310,7 +311,7 @@
             "\'",
             ":",
             ";"});
-            this.lb_btn7.Location = new System.Drawing.Point(470, 231);
+            this.lb_btn7.Location = new System.Drawing.Point(480, 296);
             this.lb_btn7.Name = "lb_btn7";
             this.lb_btn7.Size = new System.Drawing.Size(46, 30);
             this.lb_btn7.TabIndex = 22;
@@ -328,7 +329,7 @@
             "A",
             "B",
             "C"});
-            this.lb_btn8.Location = new System.Drawing.Point(522, 231);
+            this.lb_btn8.Location = new System.Drawing.Point(532, 296);
             this.lb_btn8.Name = "lb_btn8";
             this.lb_btn8.Size = new System.Drawing.Size(44, 30);
             this.lb_btn8.TabIndex = 23;
@@ -345,7 +346,7 @@
             "D",
             "E",
             "F"});
-            this.lb_btn9.Location = new System.Drawing.Point(572, 231);
+            this.lb_btn9.Location = new System.Drawing.Point(582, 296);
             this.lb_btn9.Name = "lb_btn9";
             this.lb_btn9.Size = new System.Drawing.Size(44, 30);
             this.lb_btn9.TabIndex = 24;
@@ -362,7 +363,7 @@
             "G",
             "H",
             "I"});
-            this.lb_btn4.Location = new System.Drawing.Point(470, 272);
+            this.lb_btn4.Location = new System.Drawing.Point(480, 337);
             this.lb_btn4.Name = "lb_btn4";
             this.lb_btn4.Size = new System.Drawing.Size(46, 30);
             this.lb_btn4.TabIndex = 25;
@@ -379,7 +380,7 @@
             "J",
             "K",
             "L"});
-            this.lb_btn5.Location = new System.Drawing.Point(522, 272);
+            this.lb_btn5.Location = new System.Drawing.Point(532, 337);
             this.lb_btn5.Name = "lb_btn5";
             this.lb_btn5.Size = new System.Drawing.Size(44, 30);
             this.lb_btn5.TabIndex = 26;
@@ -396,7 +397,7 @@
             "M",
             "N",
             "O"});
-            this.lb_btn6.Location = new System.Drawing.Point(572, 272);
+            this.lb_btn6.Location = new System.Drawing.Point(582, 337);
             this.lb_btn6.Name = "lb_btn6";
             this.lb_btn6.Size = new System.Drawing.Size(44, 30);
             this.lb_btn6.TabIndex = 27;
@@ -415,7 +416,7 @@
             "Q",
             "R",
             "S"});
-            this.lb_btn1.Location = new System.Drawing.Point(470, 315);
+            this.lb_btn1.Location = new System.Drawing.Point(480, 380);
             this.lb_btn1.Name = "lb_btn1";
             this.lb_btn1.Size = new System.Drawing.Size(46, 30);
             this.lb_btn1.TabIndex = 28;
@@ -432,7 +433,7 @@
             "T",
             "U",
             "V"});
-            this.lb_btn2.Location = new System.Drawing.Point(524, 316);
+            this.lb_btn2.Location = new System.Drawing.Point(534, 381);
             this.lb_btn2.Name = "lb_btn2";
             this.lb_btn2.Size = new System.Drawing.Size(42, 30);
             this.lb_btn2.TabIndex = 29;
@@ -451,7 +452,7 @@
             "X",
             "Y",
             "Z"});
-            this.lb_btn3.Location = new System.Drawing.Point(572, 315);
+            this.lb_btn3.Location = new System.Drawing.Point(582, 380);
             this.lb_btn3.Name = "lb_btn3";
             this.lb_btn3.Size = new System.Drawing.Size(44, 30);
             this.lb_btn3.TabIndex = 30;
@@ -464,7 +465,7 @@
             "*",
             "-",
             "_"});
-            this.lb_btnstar.Location = new System.Drawing.Point(470, 358);
+            this.lb_btnstar.Location = new System.Drawing.Point(480, 423);
             this.lb_btnstar.Name = "lb_btnstar";
             this.lb_btnstar.Size = new System.Drawing.Size(46, 30);
             this.lb_btnstar.TabIndex = 31;
@@ -477,7 +478,7 @@
             "#",
             "-",
             "_"});
-            this.lb_btnhash.Location = new System.Drawing.Point(572, 358);
+            this.lb_btnhash.Location = new System.Drawing.Point(582, 423);
             this.lb_btnhash.Name = "lb_btnhash";
             this.lb_btnhash.Size = new System.Drawing.Size(44, 30);
             this.lb_btnhash.TabIndex = 32;
@@ -492,18 +493,32 @@
             // lb_Global
             // 
             this.lb_Global.FormattingEnabled = true;
-            this.lb_Global.Location = new System.Drawing.Point(645, 229);
+            this.lb_Global.Location = new System.Drawing.Point(655, 294);
             this.lb_Global.Name = "lb_Global";
             this.lb_Global.Size = new System.Drawing.Size(105, 69);
             this.lb_Global.TabIndex = 33;
             this.lb_Global.Visible = false;
             this.lb_Global.SelectedIndexChanged += new System.EventHandler(this.lb_Global_SelectedIndexChanged);
             // 
+            // btn_configure
+            // 
+            this.btn_configure.AllowDrop = true;
+            this.btn_configure.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_configure.Location = new System.Drawing.Point(104, 3);
+            this.btn_configure.Name = "btn_configure";
+            this.btn_configure.Size = new System.Drawing.Size(75, 23);
+            this.btn_configure.TabIndex = 34;
+            this.btn_configure.Text = "Configure";
+            this.btn_configure.UseVisualStyleBackColor = true;
+            this.btn_configure.Click += new System.EventHandler(this.btn_configure_Click);
+            // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 413);
+            this.ClientSize = new System.Drawing.Size(779, 472);
+            this.Controls.Add(this.btn_configure);
             this.Controls.Add(this.lb_Global);
             this.Controls.Add(this.lb_btnhash);
             this.Controls.Add(this.lb_btnstar);
@@ -542,7 +557,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Mini Keyboard";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -585,6 +600,7 @@
         private System.Windows.Forms.ListBox lb_btnhash;
         private System.Windows.Forms.Timer letterBuilder;
         private System.Windows.Forms.ListBox lb_Global;
+        private System.Windows.Forms.Button btn_configure;
     }
 }
 

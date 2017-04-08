@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MyDialogs;
+
 
 namespace P4CAssignment2
 {
@@ -23,6 +25,8 @@ namespace P4CAssignment2
 
         //Timer
         Timer myTimer = new Timer();
+
+        int int_timerInterval;
 
         public Form1()
         {
@@ -285,6 +289,15 @@ namespace P4CAssignment2
         {
             tb_notepad.AppendText(Environment.NewLine);
 
+        }
+
+        private void btn_configure_Click(object sender, EventArgs e)
+        {
+            
+
+            int_timerInterval = Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require. 1000= 1 second. Currently set at:" + int_timerInterval));
+
+            letterBuilder.Interval = int_timerInterval;
         }
     }
 }
