@@ -503,7 +503,9 @@
             // btn_configure
             // 
             this.btn_configure.AllowDrop = true;
-            this.btn_configure.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_configure.FlatAppearance.BorderSize = 0;
+            this.btn_configure.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_configure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_configure.Location = new System.Drawing.Point(104, 3);
             this.btn_configure.Name = "btn_configure";
             this.btn_configure.Size = new System.Drawing.Size(75, 23);

@@ -293,9 +293,13 @@ namespace P4CAssignment2
 
         private void btn_configure_Click(object sender, EventArgs e)
         {
-            
 
-            int_timerInterval = Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require. 1000= 1 second. Currently set at:" + int_timerInterval));
+            if (int_timerInterval <= 500 || int_timerInterval >= 5000)
+            {
+                MessageBox.Show(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + int_timerInterval));
+                
+            }else
+            int_timerInterval = Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + int_timerInterval));
 
             letterBuilder.Interval = int_timerInterval;
         }
