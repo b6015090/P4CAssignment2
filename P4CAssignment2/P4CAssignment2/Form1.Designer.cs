@@ -64,7 +64,7 @@
             this.lb_btnhash = new System.Windows.Forms.ListBox();
             this.letterBuilder = new System.Windows.Forms.Timer(this.components);
             this.lb_Global = new System.Windows.Forms.ListBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Menu = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,7 +72,7 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_notepad
@@ -508,16 +508,16 @@
             this.lb_Global.Visible = false;
             this.lb_Global.SelectedIndexChanged += new System.EventHandler(this.lb_Global_SelectedIndexChanged);
             // 
-            // menuStrip1
+            // Menu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.configureToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(779, 24);
-            this.menuStrip1.TabIndex = 35;
-            this.menuStrip1.Text = "menuStrip1";
+            this.Menu.Location = new System.Drawing.Point(0, 0);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(779, 24);
+            this.Menu.TabIndex = 35;
+            this.Menu.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -534,31 +534,31 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // configureToolStripMenuItem
@@ -566,6 +566,7 @@
             this.configureToolStripMenuItem.Name = "configureToolStripMenuItem";
             this.configureToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.configureToolStripMenuItem.Text = "Configure";
+            this.configureToolStripMenuItem.Click += new System.EventHandler(this.configureToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -607,15 +608,15 @@
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_mode);
             this.Controls.Add(this.tb_notepad);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.Menu);
+            this.MainMenuStrip = this.Menu;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mini Keyboard";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Menu.ResumeLayout(false);
+            this.Menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -658,7 +659,7 @@
         private System.Windows.Forms.ListBox lb_btnhash;
         private System.Windows.Forms.Timer letterBuilder;
         private System.Windows.Forms.ListBox lb_Global;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;

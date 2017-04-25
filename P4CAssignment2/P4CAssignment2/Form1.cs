@@ -21,12 +21,8 @@ namespace P4CAssignment2
         int LetterIndex = -1;
 
         bool wordAdded = false;
-        //int WordIndex = -1;
 
-        //Timer
-        Timer myTimer = new Timer();
-
-        int int_timerInterval;
+        
 
         public Form1()
         {
@@ -253,6 +249,10 @@ namespace P4CAssignment2
                 //copy the right list box = global list box
                 lb_Global.Items.AddRange(lb_btnhash.Items);
             }
+            letterBuilder.Enabled = false;
+            LetterIndex++;
+
+            letterBuilder.Enabled = true;
         }
 
         private void tb_modestatus_TextChanged(object sender, EventArgs e)
@@ -294,14 +294,16 @@ namespace P4CAssignment2
         private void btn_configure_Click(object sender, EventArgs e)
         {
 
-            if (int_timerInterval <= 500 || int_timerInterval >= 5000)
-            {
-                MessageBox.Show(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + int_timerInterval));
-                
-            }else
-            int_timerInterval = Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + int_timerInterval));
 
-            letterBuilder.Interval = int_timerInterval;
+        }
+
+        private void configureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            letterBuilder.Interval = 500;
+         int letterInt =Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + letterBuilder.Interval ));
+            letterBuilder.Interval = letterInt;
+
+    
         }
     }
 }
