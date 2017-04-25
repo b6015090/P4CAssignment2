@@ -64,7 +64,15 @@
             this.lb_btnhash = new System.Windows.Forms.ListBox();
             this.letterBuilder = new System.Windows.Forms.Timer(this.components);
             this.lb_Global = new System.Windows.Forms.ListBox();
-            this.btn_configure = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_notepad
@@ -268,7 +276,7 @@
             this.btn_hash.Name = "btn_hash";
             this.btn_hash.Size = new System.Drawing.Size(43, 37);
             this.btn_hash.TabIndex = 18;
-            this.btn_hash.Text = "#";
+            this.btn_hash.Text = "  #    0  00";
             this.btn_hash.UseVisualStyleBackColor = false;
             this.btn_hash.Click += new System.EventHandler(this.btn_hash_Click);
             // 
@@ -476,8 +484,8 @@
             this.lb_btnhash.FormattingEnabled = true;
             this.lb_btnhash.Items.AddRange(new object[] {
             "#",
-            "-",
-            "_"});
+            "0",
+            "00"});
             this.lb_btnhash.Location = new System.Drawing.Point(582, 423);
             this.lb_btnhash.Name = "lb_btnhash";
             this.lb_btnhash.Size = new System.Drawing.Size(44, 30);
@@ -500,19 +508,64 @@
             this.lb_Global.Visible = false;
             this.lb_Global.SelectedIndexChanged += new System.EventHandler(this.lb_Global_SelectedIndexChanged);
             // 
-            // btn_configure
+            // menuStrip1
             // 
-            this.btn_configure.AllowDrop = true;
-            this.btn_configure.FlatAppearance.BorderSize = 0;
-            this.btn_configure.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_configure.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_configure.Location = new System.Drawing.Point(104, 3);
-            this.btn_configure.Name = "btn_configure";
-            this.btn_configure.Size = new System.Drawing.Size(75, 23);
-            this.btn_configure.TabIndex = 34;
-            this.btn_configure.Text = "Configure";
-            this.btn_configure.UseVisualStyleBackColor = true;
-            this.btn_configure.Click += new System.EventHandler(this.btn_configure_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.configureToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(779, 24);
+            this.menuStrip1.TabIndex = 35;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Text = "New";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Text = "Save As";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // configureToolStripMenuItem
+            // 
+            this.configureToolStripMenuItem.Name = "configureToolStripMenuItem";
+            this.configureToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.configureToolStripMenuItem.Text = "Configure";
             // 
             // Form1
             // 
@@ -520,7 +573,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 472);
-            this.Controls.Add(this.btn_configure);
             this.Controls.Add(this.lb_Global);
             this.Controls.Add(this.lb_btnhash);
             this.Controls.Add(this.lb_btnstar);
@@ -555,11 +607,15 @@
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_mode);
             this.Controls.Add(this.tb_notepad);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mini Keyboard";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -602,7 +658,14 @@
         private System.Windows.Forms.ListBox lb_btnhash;
         private System.Windows.Forms.Timer letterBuilder;
         private System.Windows.Forms.ListBox lb_Global;
-        private System.Windows.Forms.Button btn_configure;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
     }
 }
 
