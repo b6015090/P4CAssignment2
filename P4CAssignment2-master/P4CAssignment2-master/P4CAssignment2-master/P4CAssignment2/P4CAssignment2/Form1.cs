@@ -23,7 +23,8 @@ namespace P4CAssignment2
 
         string Application_Path = Directory.GetCurrentDirectory() + "\\";
 
-        string line_of_text;
+        StreamWriter My_Output_Stream;
+        StreamReader My_Input_Stream;
 
         public Form1()
         {
@@ -342,30 +343,41 @@ namespace P4CAssignment2
                 //open the stream
                 StreamWriter My_Output_Stream = File.CreateText(Application_Path + fileName + ".txt");
 
-                int lines = tb_notepad.Lines.Count();
-                for (int i = 0; i < lines; i++)
-                {
-                    My_Output_Stream.WriteLine(tb_notepad.Lines[i]); //write the stream
-                }
-
+                My_Output_Stream.WriteLine(tb_notepad.Lines); //write the stream and puts it into the notepad textbox
+              
                 My_Output_Stream.Close(); //close the stream
             }
             else
             {
                 MessageBox.Show("You must enter text before saving!");
             }
+
+
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //string OpenFileDialog1;
-
             openFileDialog1.InitialDirectory = "C\\:";
+
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show("You opened this file: " + openFileDialog1.FileName);
+
+                //My_Output_Stream = 
+               // My_Output_Stream.WriteLine(tb_notepad.Lines); //write the stream and puts it into the notepad textbox
+
+                string fileContent = File.ReadAllText(openFileDialog1);
+
+                
+               My_Output_Stream.Close();    //close the stream          
             }
+           
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

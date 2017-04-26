@@ -74,6 +74,7 @@
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lb_empty = new System.Windows.Forms.ListBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -565,6 +566,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // configureToolStripMenuItem
             // 
@@ -687,6 +689,7 @@
         private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
         private System.Windows.Forms.ListBox lb_empty;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
