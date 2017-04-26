@@ -19,3 +19,9 @@ c:\users\emma\documents\visual studio 2013\Projects\P4CAssignment2\P4CAssignment
 C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\bin\Debug\P4CAssignment2.exe.config
 C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.exe
 C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.pdb
+C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.csprojResolveAssemblyReference.cache
+C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.Form1.resources
+C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.Properties.Resources.resources
+C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\obj\Debug\P4CAssignment2.csproj.GenerateResource.Cache
+C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\bin\Debug\P4CAssignment2.exe
+C:\Users\b6015090\Desktop\P4CAssignment2-master\P4CAssignment2-master\P4CAssignment2\P4CAssignment2\bin\Debug\P4CAssignment2.pdb
