@@ -308,15 +308,12 @@ namespace P4CAssignment2
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // tb_notepad
+            // New File
             if (tb_notepad.Text != "")
-            {
-                MessageBox.Show("Save your work!");
-            }
-            else
             {
                 tb_notepad.Clear();
             }
+            
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
