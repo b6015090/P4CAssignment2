@@ -507,7 +507,7 @@
             this.lb_Global.Size = new System.Drawing.Size(105, 69);
             this.lb_Global.TabIndex = 33;
             this.lb_Global.Visible = false;
-            this.lb_Global.SelectedIndexChanged += new System.EventHandler(this.lb_Global_SelectedIndexChanged);
+
             // 
             // Menu
             // 

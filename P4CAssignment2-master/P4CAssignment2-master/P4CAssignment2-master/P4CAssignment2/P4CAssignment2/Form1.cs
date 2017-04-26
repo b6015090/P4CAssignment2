@@ -23,8 +23,7 @@ namespace P4CAssignment2
 
         string Application_Path = Directory.GetCurrentDirectory() + "\\";
 
-        StreamWriter My_Output_Stream;
-        StreamReader My_Input_Stream;
+        bool Saved = false;
 
         public Form1()
         {
@@ -279,10 +278,7 @@ namespace P4CAssignment2
             }
         }
 
-        private void lb_Global_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void btn_enter_Click(object sender, EventArgs e)
         {
@@ -295,11 +291,10 @@ namespace P4CAssignment2
 
         private void configureToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //sets the interval fro the timer and allows the user to create their own
             letterBuilder.Interval = 500;
             int letterInt = Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + letterBuilder.Interval));
             letterBuilder.Interval = letterInt;
-
-
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -352,13 +347,14 @@ namespace P4CAssignment2
                 //string fileContent = File.ReadAllText(openFileDialog1);
 
                 
-               My_Output_Stream.Close();    //close the stream          
+              // My_Output_Stream.Close();    //close the stream          
             }
            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Closes the keyboard application
             Close();
         }
 
