@@ -16,24 +16,19 @@ namespace P4CAssignment2
     public partial class Form1 : Form
     {
 
-        bool firstvisit = true;
-        int LetterIndex = -1;
+        bool firstvisit = true; //Bool for selecting letters
+        int LetterIndex = -1; //Counts how many times the button has been licked and will choose the corresponding letter from the correct listbox
 
-        bool wordAdded = false;
+        bool wordAdded = false;  //fro sending text into the word builder
 
         string Application_Path = Directory.GetCurrentDirectory() + "\\";
 
-        bool Saved = false;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void lb_btn7_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_mode_Click(object sender, EventArgs e)
         {
@@ -45,16 +40,6 @@ namespace P4CAssignment2
             {
                 tb_modestatus.Text = "Multi-Press";
             }
-        }
-
-        private void Frm_MainWindow_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_wordBuilder_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -250,6 +235,7 @@ namespace P4CAssignment2
 
         private void btn0_Click(object sender, EventArgs e)
         {
+            //Sends the text in the wordbuilder to the notepad
             wordAdded = true;
 
             if (wordAdded == true)
@@ -257,37 +243,29 @@ namespace P4CAssignment2
                 tb_notepad.AppendText(" " + tb_wordBuilder.Text);
                 //Clears the textbox
                 tb_wordBuilder.Clear();
-
             }
 
             //Adding to dictionary
             if (tb_notepad.Text != "")
-            {
-                
+            { 
                 //open the stream
                 StreamWriter My_Output_Stream = File.CreateText(Application_Path + "Dictionary.txt");
 
                 int lines = tb_notepad.Lines.Count();
                 for (int i = 0; i < lines; i++)
                 {
-                    My_Output_Stream.WriteLine(tb_notepad.Lines[i] + Environment.NewLine); //write the stream
-                  
+                    My_Output_Stream.WriteLine(tb_notepad.Lines[i] + Environment.NewLine); //write the stream 
                 }
 
                 My_Output_Stream.Close(); //close the stream
             }
         }
 
-
-
         private void btn_enter_Click(object sender, EventArgs e)
         {
             tb_notepad.AppendText(Environment.NewLine);
             tb_notepad.Focus();
-
         }
-
-
 
         private void configureToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -303,12 +281,7 @@ namespace P4CAssignment2
             if (tb_notepad.Text != "")
             {
                 tb_notepad.Clear();
-            }
-            else
-            {
-                MessageBox.Show("You haven't saved!");
-            }
-            
+            }   
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -336,18 +309,10 @@ namespace P4CAssignment2
         {
             openFileDialog1.InitialDirectory = "C\\:";
 
-
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show("You opened this file: " + openFileDialog1.FileName);
-
-                //My_Output_Stream = 
-               // My_Output_Stream.WriteLine(tb_notepad.Lines); //write the stream and puts it into the notepad textbox
-
-                //string fileContent = File.ReadAllText(openFileDialog1);
-
-                
-              // My_Output_Stream.Close();    //close the stream          
+                //Oopens the file but couldn't get the text file to be displayed in the textbox.
             }
            
         }

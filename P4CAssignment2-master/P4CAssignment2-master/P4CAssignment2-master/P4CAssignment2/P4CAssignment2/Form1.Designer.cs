@@ -298,7 +298,7 @@
             this.tb_wordBuilder.Name = "tb_wordBuilder";
             this.tb_wordBuilder.Size = new System.Drawing.Size(121, 20);
             this.tb_wordBuilder.TabIndex = 20;
-            this.tb_wordBuilder.TextChanged += new System.EventHandler(this.tb_wordBuilder_TextChanged);
+
             // 
             // tb_modestatus
             // 
@@ -326,7 +326,7 @@
             this.lb_btn7.Size = new System.Drawing.Size(46, 30);
             this.lb_btn7.TabIndex = 22;
             this.lb_btn7.Visible = false;
-            this.lb_btn7.SelectedIndexChanged += new System.EventHandler(this.lb_btn7_SelectedIndexChanged);
+
             // 
             // lb_btn8
             // 
