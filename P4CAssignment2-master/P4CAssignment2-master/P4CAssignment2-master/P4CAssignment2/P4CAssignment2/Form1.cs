@@ -53,10 +53,6 @@ namespace P4CAssignment2
 
         }
 
-
-
-
-
         private void tb_wordBuilder_TextChanged(object sender, EventArgs e)
         {
 
@@ -225,10 +221,6 @@ namespace P4CAssignment2
             letterBuilder.Enabled = true;
         }
 
-        private void lb_btnhash_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void letterBuilder_Tick(object sender, EventArgs e)
         {
@@ -255,16 +247,6 @@ namespace P4CAssignment2
             LetterIndex++;
 
             letterBuilder.Enabled = true;
-        }
-
-        private void tb_modestatus_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_notepad_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -309,11 +291,7 @@ namespace P4CAssignment2
 
         }
 
-        private void btn_configure_Click(object sender, EventArgs e)
-        {
 
-
-        }
 
         private void configureToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -330,6 +308,10 @@ namespace P4CAssignment2
             if (tb_notepad.Text != "")
             {
                 tb_notepad.Clear();
+            }
+            else
+            {
+                MessageBox.Show("You haven't saved!");
             }
             
         }
@@ -367,7 +349,7 @@ namespace P4CAssignment2
                 //My_Output_Stream = 
                // My_Output_Stream.WriteLine(tb_notepad.Lines); //write the stream and puts it into the notepad textbox
 
-                string fileContent = File.ReadAllText(openFileDialog1);
+                //string fileContent = File.ReadAllText(openFileDialog1);
 
                 
                My_Output_Stream.Close();    //close the stream          
@@ -379,6 +361,8 @@ namespace P4CAssignment2
         {
             Close();
         }
+
+
     }
 }
 

@@ -68,13 +68,14 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lb_empty = new System.Windows.Forms.ListBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +89,6 @@
             this.tb_notepad.Size = new System.Drawing.Size(754, 187);
             this.tb_notepad.TabIndex = 0;
             this.tb_notepad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_notepad.TextChanged += new System.EventHandler(this.tb_notepad_TextChanged);
             // 
             // btn_mode
             // 
@@ -309,7 +309,6 @@
             this.tb_modestatus.TabIndex = 21;
             this.tb_modestatus.Text = "Multi-Press";
             this.tb_modestatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_modestatus.TextChanged += new System.EventHandler(this.tb_modestatus_TextChanged);
             // 
             // lb_btn7
             // 
@@ -494,7 +493,6 @@
             this.lb_btnhash.Size = new System.Drawing.Size(44, 30);
             this.lb_btnhash.TabIndex = 32;
             this.lb_btnhash.Visible = false;
-            this.lb_btnhash.SelectedIndexChanged += new System.EventHandler(this.lb_btnhash_SelectedIndexChanged);
             // 
             // letterBuilder
             // 
@@ -526,9 +524,11 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
+            this.toolStripSeparator1,
             this.openToolStripMenuItem,
-            this.saveToolStripMenuItem,
+            this.toolStripSeparator2,
             this.saveAsToolStripMenuItem,
+            this.toolStripSeparator3,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -547,12 +547,6 @@
             this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
@@ -575,17 +569,24 @@
             this.configureToolStripMenuItem.Text = "Configure";
             this.configureToolStripMenuItem.Click += new System.EventHandler(this.configureToolStripMenuItem_Click);
             // 
-            // lb_empty
-            // 
-            this.lb_empty.FormattingEnabled = true;
-            this.lb_empty.Location = new System.Drawing.Point(660, 381);
-            this.lb_empty.Name = "lb_empty";
-            this.lb_empty.Size = new System.Drawing.Size(99, 17);
-            this.lb_empty.TabIndex = 36;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // Form1
             // 
@@ -593,7 +594,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 500);
-            this.Controls.Add(this.lb_empty);
             this.Controls.Add(this.lb_Global);
             this.Controls.Add(this.lb_btnhash);
             this.Controls.Add(this.lb_btnstar);
@@ -683,13 +683,14 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
-        private System.Windows.Forms.ListBox lb_empty;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 
