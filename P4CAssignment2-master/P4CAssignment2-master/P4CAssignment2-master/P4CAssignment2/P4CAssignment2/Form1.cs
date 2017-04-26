@@ -16,13 +16,14 @@ namespace P4CAssignment2
     public partial class Form1 : Form
     {
 
-
         bool firstvisit = true;
         int LetterIndex = -1;
 
         bool wordAdded = false;
 
-        
+        string Application_Path = Directory.GetCurrentDirectory() + "\\";
+
+        string line_of_text;
 
         public Form1()
         {
@@ -51,7 +52,7 @@ namespace P4CAssignment2
 
         }
 
-       
+
 
 
 
@@ -262,7 +263,7 @@ namespace P4CAssignment2
 
         private void tb_notepad_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -276,8 +277,23 @@ namespace P4CAssignment2
                 tb_wordBuilder.Clear();
 
             }
-            
 
+            //Adding to dictionary
+            if (tb_notepad.Text != "")
+            {
+                
+                //open the stream
+                StreamWriter My_Output_Stream = File.CreateText(Application_Path + "Dictionary.txt");
+
+                int lines = tb_notepad.Lines.Count();
+                for (int i = 0; i < lines; i++)
+                {
+                    My_Output_Stream.WriteLine(tb_notepad.Lines[i] + Environment.NewLine); //write the stream
+                  
+                }
+
+                My_Output_Stream.Close(); //close the stream
+            }
         }
 
         private void lb_Global_SelectedIndexChanged(object sender, EventArgs e)
@@ -288,6 +304,7 @@ namespace P4CAssignment2
         private void btn_enter_Click(object sender, EventArgs e)
         {
             tb_notepad.AppendText(Environment.NewLine);
+            tb_notepad.Focus();
 
         }
 
@@ -300,10 +317,56 @@ namespace P4CAssignment2
         private void configureToolStripMenuItem_Click(object sender, EventArgs e)
         {
             letterBuilder.Interval = 500;
-         int letterInt =Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + letterBuilder.Interval ));
+            int letterInt = Convert.ToInt32(My_Dialogs.InputBox("Please enter the delay value you require between 500-5000. 1000= 1 second. Currently set at:" + letterBuilder.Interval));
             letterBuilder.Interval = letterInt;
 
-    
+
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // New File
+            if (tb_notepad.Text != "")
+            {
+                tb_notepad.Clear();
+            }
+            
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            if (tb_notepad.Text != "")
+            {
+                string fileName = My_Dialogs.InputBox("File name: ");
+                //open the stream
+                StreamWriter My_Output_Stream = File.CreateText(Application_Path + fileName + ".txt");
+
+                int lines = tb_notepad.Lines.Count();
+                for (int i = 0; i < lines; i++)
+                {
+                    My_Output_Stream.WriteLine(tb_notepad.Lines[i]); //write the stream
+                }
+
+                My_Output_Stream.Close(); //close the stream
+            }
+            else
+            {
+                MessageBox.Show("You must enter text before saving!");
+            }
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //string OpenFileDialog1;
+
+            openFileDialog1.InitialDirectory = "C\\:";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("You opened this file: " + openFileDialog1.FileName);
+            }
         }
     }
 }
+
