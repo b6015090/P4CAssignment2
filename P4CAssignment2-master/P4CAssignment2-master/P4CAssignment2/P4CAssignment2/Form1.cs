@@ -22,7 +22,7 @@ namespace P4CAssignment2
 
         bool wordAdded = false;
 
-        
+        string Application_Path = Directory.GetCurrentDirectory() + "\\";
 
         public Form1()
         {
@@ -304,6 +304,32 @@ namespace P4CAssignment2
             letterBuilder.Interval = letterInt;
 
     
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // tb_notepad
+            if (tb_notepad.Text != "")
+            {
+                MessageBox.Show("Save your work!");
+            }
+            else
+            {
+                tb_notepad.Clear();
+            }
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (tb_notepad.Text != "")
+            {
+                //open the stream
+                StreamWriter My_Output_Stream = File.CreateText(Application_Path + "MyFile.txt");
+
+                int lines = tb_notepad.Lines.Count();
+
+                for()
+            }
         }
     }
 }
