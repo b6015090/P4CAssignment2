@@ -276,7 +276,21 @@ namespace P4CAssignment2
 
             }
 
+            //Adding to dictionary
+            if (tb_notepad.Text != "")
+            {
+                
+                //open the stream
+                StreamWriter My_Output_Stream = File.CreateText(Application_Path + "Dictionary.txt");
 
+                int lines = tb_notepad.Lines.Count();
+                for (int i = 0; i < lines; i++)
+                {
+                    My_Output_Stream.WriteLine(tb_notepad.Lines[i]); //write the stream
+                }
+
+                My_Output_Stream.Close(); //close the stream
+            }
         }
 
         private void lb_Global_SelectedIndexChanged(object sender, EventArgs e)
